@@ -10,5 +10,42 @@ NGFW (Next-Generation Firewall – Межсетевой экран нового 
 
 Топология сети – это принцип или архитектура того, как устройства соединены между собой (например, «звезда», «кольцо» или «ячеистая» структура). Это математическая и логическая модель связей. Карта сети – это конкретная схема или визуализация вашей инфраструктуры. На карте отображаются реальные узлы (серверы, роутеры), их марки, IP-адреса и то, как они физически или логически взаимодействуют друг с другом на данный момент.
 
-Статья на хабре где чёта говорится https://habr.com/ru/articles/444410/
+Статья на хабре где чёта говорится https://habr.com/ru/articles/44441
 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue May 19 03:03:04 2026 as: nmap -sn -&#45;traceroute -oX network_map_2.xml 10.1.1.0/24 -->
+<nmaprun scanner="nmap" args="nmap -sn -&#45;traceroute -oX network_map_2.xml 10.1.1.0/24" start="1779134584" startstr="Tue May 19 03:03:04 2026" version="7.80" xmloutputversion="1.04">
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1779134584" endtime="1779134584"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.1.1.1" addrtype="ipv4"/>
+<address addr="BC:24:11:31:D7:82" addrtype="mac"/>
+<hostnames>
+<hostname name="_gateway" type="PTR"/>
+</hostnames>
+<trace>
+<hop ttl="1" ipaddr="10.1.1.1" rtt="1.00" host="_gateway"/>
+</trace>
+<times srtt="1002" rttvar="5000" to="100000"/>
+</host>
+<host starttime="1779134584" endtime="1779134584"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.1.1.50" addrtype="ipv4"/>
+<address addr="BC:24:11:9B:BF:C7" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<trace>
+<hop ttl="1" ipaddr="10.1.1.50" rtt="0.86"/>
+</trace>
+<times srtt="860" rttvar="3775" to="100000"/>
+</host>
+<host starttime="0" endtime="0"><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="10.1.1.100" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mgmt" type="PTR"/>
+</hostnames>
+</host>
+<runstats><finished time="1779134586" timestr="Tue May 19 03:03:06 2026" elapsed="2.16" summary="Nmap done at Tue May 19 03:03:06 2026; 256 IP addresses (3 hosts up) scanned in 2.16 seconds" exit="success"/><hosts up="3" down="253" total="256"/>
+</runstats>
+</nmaprun>
