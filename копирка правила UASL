@@ -119,3 +119,61 @@ UASL(
     .pattern="/dvwa/vulnerabilities/xss_r/?name=<script>alert('XSS')</script>";
     .no_case;
 )
+
+
+
+
+
+-----------------------
+
+
+UASL(
+    .name="Block_Scan_Robots_Txt";
+    .protocol=tcp;
+    .service=http;
+    .pattern="GET /robots.txt";
+    .nocase;
+)
+
+
+
+UASL(
+    .name="Block_Scan_HNAP1";
+    .protocol=tcp;
+    .service=http;
+    .pattern="GET /HNAP1";
+    .nocase;
+)
+
+
+
+
+UASL(
+    .name="Block_Scan_Evox_About";
+    .protocol=tcp;
+    .service=http;
+    .pattern="GET /evox/about";
+    .nocase;
+)
+
+
+
+
+UASL(
+    .name="Block_RCE_Uname_A";
+    .protocol=tcp;
+    .service=http;
+    .pattern="uname%20-a";
+    .nocase;
+)
+
+
+
+
+UASL(
+    .name="Block_RCE_List_Directory";
+    .protocol=tcp;
+    .service=http;
+    .pattern=";ls";
+    .nocase;
+)
