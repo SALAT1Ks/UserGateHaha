@@ -75,3 +75,12 @@ UASL(
 
 
 
+
+
+
+UASL(
+    .name="Block_Nmap_URL_RegEx";
+    .protocol=tcp;
+    .service=http;
+    .regex="(?i)nmap\.org";
+)
