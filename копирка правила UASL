@@ -98,3 +98,24 @@ UASL(
 
 
 
+--------------------------
+
+
+
+UASL(
+    .name="Block_Testing_Purposes_Nocase";
+    .protocol=tcp;
+    .service=http;
+    .pattern="TESTING_PURPOSES_ONLY";
+    .no_case;
+)
+
+
+
+UASL(
+    .name="Block_DVWA_XSS_Nocase";
+    .protocol=tcp;
+    .service=http;
+    .pattern="/dvwa/vulnerabilities/xss_r/?name=<script>alert('XSS')</script>";
+    .no_case;
+)
