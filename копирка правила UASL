@@ -199,3 +199,29 @@ UASL(
 
 
 
+
+
+----------------
+
+
+
+UASL(
+    .name="Block_XML_Parser_Nocase";
+    .protocol=tcp;
+    .service=http;
+    .pattern="xml_parser.php";
+    .nocase;
+)
+
+
+
+
+UASL(
+    .name="Block_DVWA_XSS_Stored_Nocase";
+    .protocol=tcp;
+    .service=http;
+    .pattern="/vulnerabilities/xss_s/";
+    .nocase;
+)
+
+
