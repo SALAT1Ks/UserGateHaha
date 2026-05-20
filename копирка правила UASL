@@ -189,3 +189,13 @@ UASL(
     .nopayload;
     .no_case;
 )
+
+
+UASL(
+    .name="TCP_Empty_Packet_Detect";
+    .protocol=tcp;
+    .nopayload;
+)
+
+
+
