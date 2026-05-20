@@ -84,3 +84,17 @@ UASL(
     .service=http;
     .regex="(?i)nmap\.org";
 )
+
+
+
+
+UASL(
+    .name="Block_Nmap_Scripting_Engine_Exact";
+    .protocol=tcp;
+    .service=http;
+    .pattern="Nmap Scripting Engine";
+    .no_case;
+)
+
+
+
