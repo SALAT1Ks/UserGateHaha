@@ -12,3 +12,103 @@ UASL(
     .service=http;
     .pattern="Nikto";
 )
+
+
+
+
+
+
+
+
+ Capture Filename: test_NMAP_SOV.pcap
+Created: Wed May 20 11:24:58 2026
+Frame 1: frame, eth, ip, tcp,
+  Frame 1: 217 bytes on wire (1736 bits), 217 bytes captured (1736 bits)
+         Encapsulation type: Ethernet (1)
+         Arrival Time: May 20, 2026 11:17:03.540424000 UTC
+         Time shift for this packet: 0.000000000 seconds
+         Epoch Time: 1779275823.540424000 seconds
+         Time delta from previous captured frame: 0.000000000 seconds
+         Time delta from previous displayed frame: 0.000000000 seconds
+         Time since reference or first frame: 0.000000000 seconds
+         Frame Number: 1
+         Frame Length: 217 bytes (1736 bits)
+         Capture Length: 217 bytes (1736 bits)
+         Frame is marked: False
+         Frame is ignored: False
+         Protocols in frame: eth:ethertype:ip:tcp
+  Ethernet II, Src: bc:24:11:1b:15:0b (bc:24:11:1b:15:0b), Dst: bc:24:11:4f:30:e9 (bc:24:11:4f:30:e9)
+         Destination: bc:24:11:4f:30:e9 (bc:24:11:4f:30:e9)
+         Address: bc:24:11:4f:30:e9 (bc:24:11:4f:30:e9)
+         .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+         .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+         Source: bc:24:11:1b:15:0b (bc:24:11:1b:15:0b)
+         Address: bc:24:11:1b:15:0b (bc:24:11:1b:15:0b)
+         .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+         .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+         Type: IPv4 (0x0800)
+  Internet Protocol Version 4, Src: 203.0.113.200, Dst: 10.1.1.50
+         0100 .... = Version: 4
+         .... 0101 = Header Length: 20 bytes (5)
+         Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+         0000 00.. = Differentiated Services Codepoint: Default (0)
+         .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+         Total Length: 203
+         Identification: 0x5946 (22854)
+         Flags: 0x4000, Don't fragment
+         0... .... .... .... = Reserved bit: Not set
+         .1.. .... .... .... = Don't fragment: Set
+         ..0. .... .... .... = More fragments: Not set
+         ...0 0000 0000 0000 = Fragment offset: 0
+         Time to live: 63
+         Protocol: TCP (6)
+         Header checksum: 0x99eb [validation disabled]
+         Header checksum status: Unverified
+         Source: 203.0.113.200
+         Destination: 10.1.1.50
+  Transmission Control Protocol, Src Port: 32812, Dst Port: 80, Seq: 1, Ack: 1, Len: 151
+         Source Port: 32812
+         Destination Port: 80
+         Stream index: 0
+         TCP Segment Len: 151
+         Sequence number: 1 (relative sequence number)
+         Sequence number (raw): 2594141286
+         Next sequence number: 152 (relative sequence number)
+         Acknowledgment number: 1 (relative ack number)
+         Acknowledgment number (raw): 3871194807
+         1000 .... = Header Length: 32 bytes (8)
+         Flags: 0x018 (PSH, ACK)
+         000. .... .... = Reserved: Not set
+         ...0 .... .... = Nonce: Not set
+         .... 0... .... = Congestion Window Reduced (CWR): Not set
+         .... .0.. .... = ECN-Echo: Not set
+         .... ..0. .... = Urgent: Not set
+         .... ...1 .... = Acknowledgment: Set
+         .... .... 1... = Push: Set
+         .... .... .0.. = Reset: Not set
+         .... .... ..0. = Syn: Not set
+         .... .... ...0 = Fin: Not set
+         TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+         Window size value: 502
+         Calculated window size: 502
+         Window size scaling factor: -1 (unknown)
+         Checksum: 0x538a [unverified]
+         Checksum Status: Unverified
+         Urgent pointer: 0
+         Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+         TCP Option - No-Operation (NOP)
+         Kind: No-Operation (1)
+         TCP Option - No-Operation (NOP)
+         Kind: No-Operation (1)
+         TCP Option - Timestamps: TSval 443933194, TSecr 1001074
+         Kind: Time Stamp Option (8)
+         Length: 10
+         Timestamp value: 443933194
+         Timestamp echo reply: 1001074
+         SEQ/ACK analysis
+         Bytes in flight: 151
+         Bytes sent since last PSH flag: 151
+         Timestamps
+         Time since first frame in this TCP stream: 0.000000000 seconds
+         Time since previous frame in this TCP stream: 0.000000000 seconds
+         TCP payload (151 bytes)
