@@ -177,3 +177,15 @@ UASL(
     .pattern=";ls";
     .no_case;
 )
+
+
+
+
+UASL(
+    .protocol=tcp;
+    .tcp.flags=S;
+    .rate=1000,2;
+    .track=src_ip;
+    .nopayload;
+    .no_case;
+)
