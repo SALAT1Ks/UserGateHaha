@@ -1,0 +1,14 @@
+UASL(
+    .name="Block_Nmap_Web";
+    .protocol=tcp;
+    .dst_port=80;
+    .pattern="Nmap";
+)
+
+
+UASL(
+    .name="Block_Nikto_Scanner";
+    .protocol=tcp;
+    .service=http;
+    .pattern="Nikto";
+)
