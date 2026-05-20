@@ -132,7 +132,7 @@ UASL(
     .protocol=tcp;
     .service=http;
     .pattern="GET /robots.txt";
-    .nocase;
+    .no_case;
 )
 
 
@@ -142,7 +142,7 @@ UASL(
     .protocol=tcp;
     .service=http;
     .pattern="GET /HNAP1";
-    .nocase;
+    .no_case;
 )
 
 
@@ -153,7 +153,7 @@ UASL(
     .protocol=tcp;
     .service=http;
     .pattern="GET /evox/about";
-    .nocase;
+    .no_case;
 )
 
 
@@ -164,7 +164,7 @@ UASL(
     .protocol=tcp;
     .service=http;
     .pattern="uname%20-a";
-    .nocase;
+    .no_case;
 )
 
 
@@ -175,5 +175,5 @@ UASL(
     .protocol=tcp;
     .service=http;
     .pattern=";ls";
-    .nocase;
+    .no_case;
 )
