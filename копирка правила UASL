@@ -1,0 +1,77 @@
+SQL ИНЪЕКЦИИ
+
+UASL(
+    .name="OWASP_SQLi_Union_Select";
+    .protocol=tcp;
+    .service=http;
+    .pattern="union select";
+    .nocase;
+)
+
+
+
+UASL(
+    .name="OWASP_SQLi_Auth_Bypass";
+    .protocol=tcp;
+    .service=http;
+    .pattern="' or 1=1";
+    .nocase;
+)
+
+
+Чтение чувствительных системных файлов
+
+UASL(
+    .name="OWASP_LFI_Etc_Passwd";
+    .protocol=tcp;
+    .service=http;
+    .pattern="/etc/passwd";
+)
+
+
+Внедрение команд через разделители (;, &&, |)
+
+UASL(
+    .name="OWASP_RCE_Linux_Whoami";
+    .protocol=tcp;
+    .service=http;
+    .pattern="; whoami";
+    .nocase;
+)
+
+
+Категория XSS (Cross-Site Scripting / Межсайтовый скриптинг)
+
+
+UASL(
+    .name="OWASP_XSS_Script_Tag";
+    .protocol=tcp;
+    .service=http;
+    .pattern="<script>";
+    .nocase;
+)
+
+
+UASL(
+    .name="OWASP_XSS_Event_Handler";
+    .protocol=tcp;
+    .service=http;
+    .pattern="onerror=";
+    .nocase;
+)
+
+
+
+Security Misconfiguration (XXE Injection)
+
+
+UASL(
+    .name="OWASP_XXE_Entity_Declaration";
+    .protocol=tcp;
+    .service=http;
+    .pattern="<!ENTITY";
+    .nocase;
+)
+
+
+
