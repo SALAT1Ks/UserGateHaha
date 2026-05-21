@@ -175,3 +175,11 @@ UASL(
     .pattern="/vulnerabilities/";
     .no_case;
 )
+
+
+UASL(
+    .name="Block_XML_XInclude_Attack";
+    .service=http;
+    .pattern="xi:include";
+    .no_case;
+)
