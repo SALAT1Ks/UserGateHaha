@@ -1,0 +1,194 @@
+UASL(
+    .name="Block_Nmap_Web";
+    .protocol=tcp;
+    .dst_port=80;
+    .pattern="Nmap";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_Nikto_Scanner";
+    .protocol=tcp;
+    .service=http;
+    .pattern="Nikto";
+    .no_case;
+)
+
+
+UASL(
+    .name = "Block Nmap NSE Scanner";
+    .protocol = tcp;
+    .dst_port = 80;
+    .pattern = "Nmap Scripting Engine";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_SQLi_Union";
+    .protocol=tcp;
+    .service=http;
+    .pattern="union select";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_SQLi_Auth_Bypass";
+    .protocol=tcp;
+    .service=http;
+    .pattern="' or 1=1";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_OWASP_LFI_Etc_Passwd";
+    .protocol=tcp;
+    .service=http;
+    .pattern="/etc/passwd";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_OWASP_RCE_Linux_Whoami";
+    .protocol=tcp;
+    .service=http;
+    .pattern="; whoami";
+    .no_case;
+)
+
+
+UASL(
+    .id = 1000009;
+    .name="Block_XSS_Script_Tag";
+    .protocol=tcp;
+    .dst_port = 80;
+    .pattern = "<script>";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_XSS_Event_Handler";
+    .protocol=tcp;
+    .service=http;
+    .pattern="onerror=";
+)
+
+
+
+UASL(
+    .name="Block_OWASP_XXE_Entity_Declaration";
+    .protocol=tcp;
+    .service=http;
+    .pattern="<!ENTITY";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_Nmap_URL";
+    .protocol=tcp;
+    .service=http;
+    .host="nmap.org";
+)
+
+
+UASL(
+    .name="Block_Testing_Purposes";
+    .protocol=tcp;
+    .service=http;
+    .pattern="TESTING_PURPOSES_ONLY";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_DVWA_XSS";
+    .protocol=tcp;
+    .service=http;
+    .pattern="/dvwa/vulnerabilities/xss_r/?name=<script>alert('XSS')</script>";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_Scan_Robots_Txt";
+    .protocol=tcp;
+    .service=http;
+    .pattern="GET /robots.txt";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_Scan_HNAP1";
+    .protocol=tcp;
+    .service=http;
+    .pattern="GET /HNAP1";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_Scan_Evox_About";
+    .protocol=tcp;
+    .service=http;
+    .pattern="GET /evox/about";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_RCE_Uname_A";
+    .protocol=tcp;
+    .service=http;
+    .pattern="uname%20-a";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_RCE_List_Directory";
+    .protocol=tcp;
+    .service=http;
+    .pattern=";ls";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_Empty_Packet";
+    .protocol=tcp;
+    .nopayload;
+)
+
+
+UASL(
+    .name="Block_XML_Parser";
+    .protocol=tcp;
+    .service=http;
+    .pattern="xml_parser.php";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_Vulnerable_Pattern";
+    .protocol=tcp;
+    .service=http;
+    .pattern="vulnerable";
+    .no_case;
+)
+
+
+UASL(
+    .name="Block_Vulnerability_Folder";
+    .protocol=tcp;
+    .service=http;
+    .pattern="/vulnerabilities/";
+    .no_case;
+)
