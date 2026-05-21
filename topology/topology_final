@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="YgaUc3ikxh-7-mvaz_GI">
+    <mxGraphModel dx="1240" dy="1976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ce8FpgJgLhicUhj0WafD-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;opacity=40;fontColor=#ffffff;align=left;" value="&lt;div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="320" width="600" x="150" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;opacity=40;" value="" vertex="1">
+          <mxGeometry height="330" width="280" x="310" y="-190" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-45" edge="1" parent="1" source="ce8FpgJgLhicUhj0WafD-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.524;entryY=0.154;entryDx=0;entryDy=0;endArrow=none;endFill=0;entryPerimeter=0;" target="ce8FpgJgLhicUhj0WafD-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="клиент&lt;br&gt;203.0.113.200" vertex="1">
+          <mxGeometry height="80" width="120" x="390" y="-150" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-42" edge="1" parent="1" source="ce8FpgJgLhicUhj0WafD-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;exitPerimeter=0;fillColor=#e51400;strokeColor=#B20000;" target="ce8FpgJgLhicUhj0WafD-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-41" edge="1" parent="1" source="ce8FpgJgLhicUhj0WafD-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;fillColor=#0050ef;strokeColor=#001DBC;" target="ce8FpgJgLhicUhj0WafD-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="UserGate NGFW" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-54" edge="1" parent="1" source="ce8FpgJgLhicUhj0WafD-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="ce8FpgJgLhicUhj0WafD-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-55" edge="1" parent="1" source="ce8FpgJgLhicUhj0WafD-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="LAN Switch&lt;br&gt;10.1.1.0/24" vertex="1">
+          <mxGeometry height="70" width="90" x="410" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Admin&lt;br&gt;10.1.1.100" vertex="1">
+          <mxGeometry height="100" width="190" x="165" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-52" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=light-dark(#000000,#66B2FF);fillColor=#1ba1e2;strokeColor=#006EAF;" target="ce8FpgJgLhicUhj0WafD-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="470" />
+              <mxPoint x="660" y="220" />
+            </Array>
+            <mxPoint x="650" y="470" as="sourcePoint" />
+            <mxPoint x="520" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="WWW&lt;br&gt;&lt;div&gt;10.1.1.50&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="190" x="545" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-46" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="Внешняя сеть" vertex="1">
+          <mxGeometry height="130" width="210" x="335" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Zone: Trusted (LAN 10.1.1.0/24)&lt;div&gt;In-band management HTTPS: 8001&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="290" x="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Zone: Unrusted (WAN 203.0.113.0/24)" vertex="1">
+          <mxGeometry height="30" width="290" x="310" y="-190" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#B20000;fillColor=#e51400;align=left;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="Port1 (WAN/Untrusted)&lt;div&gt;203.0.113.51&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="130" x="460" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-50" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#001DBC;fillColor=#0050ef;align=left;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="Port0 (LAN/Trusted)&lt;div&gt;10.1.1.1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="130" x="460" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ce8FpgJgLhicUhj0WafD-53" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Логический канал управления HTTPS: 8001" vertex="1">
+          <mxGeometry height="30" width="140" x="650" y="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
