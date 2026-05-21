@@ -148,7 +148,7 @@ UASL(
 UASL(
     .protocol=tcp;
     .tcp.flags=S;
-    .rate=1000,2;
+    .rate=1000,2;   -------- под вопросом
     .track=src_ip;
     .nopayload;
 ) 
