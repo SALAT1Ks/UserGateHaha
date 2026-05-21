@@ -144,13 +144,15 @@ UASL(
     .no_case;
 )
 
------------------------
+
 UASL(
-    .name="Block_Empty_Packet";
     .protocol=tcp;
+    .tcp.flags=S;
+    .rate=1000,2;
+    .track=src_ip;
     .nopayload;
-)
-----------------------
+) 
+
 
 UASL(
     .name="Block_XML_Parser";
