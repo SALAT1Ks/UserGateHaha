@@ -191,12 +191,7 @@ UASL(
 )
 
 
-UASL(
-    .name="TCP_Empty_Packet_Detect";
-    .protocol=tcp;
-    .nopayload;
-)
-
+UASL(.protocol=tcp; .tcp.flags=S; .rate=1000,2; .track=src_ip; .nopayload;) 
 
 
 
