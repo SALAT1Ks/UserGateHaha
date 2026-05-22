@@ -148,9 +148,10 @@ UASL(
 UASL(
     .protocol=tcp;
     .tcp.flags=S;
-    .track=src_ip;
+    .rate=1000,2; ---- мб на замену
+    .track=src_ip; 
     .nopayload;
-) 
+)
 
 
 UASL(
